@@ -1,0 +1,139 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10em 2em;
+    margin: 0;
+}
+
+.container {
+    max-height: 100vh;
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    overflow: auto;
+}
+
+.cards {
+    display: flex;
+    overflow: auto;
+}
+
+
+/* Typography */
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* Background Colors */
+#sedan {
+    background-color: hsla(31, 77%, 52%);
+}
+
+#suvs {
+    background-color: hsla(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsla(179, 100%, 13%);
+}
+
+
+/* Card styling */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5em;
+    background-color: orangered;
+    gap: 3em;
+    border-radius: .5em;
+}
+
+.card .title {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2em;
+}
+
+
+/* Button */
+button {
+    padding: .85em;
+    border-radius: 2em;
+    width: 10em;
+    background-color: white;
+    border: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sedan-btn {
+    color: hsla(31, 77%, 52%);
+}
+
+.suvs-btn {
+    color: hsla(184, 100%, 22%);
+}
+
+.luxury-btn {
+    color: hsla(179, 100%, 13%);
+}
+
+
+/* Hover Effect */
+button:hover {
+    transform: scale(1.2);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* Mobile View */
+@media(max-width: 768px) {
+    .container {
+        padding: 2em;
+        margin: 2em;
+        overflow: auto;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 2em;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
